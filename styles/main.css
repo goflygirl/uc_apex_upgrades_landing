@@ -91,7 +91,7 @@ body {
 }
 
 .logo-img {
-    width: 200px;
+    width: 32px;
     height: 32px;
 }
 
@@ -1213,7 +1213,7 @@ body {
     }
     
     .logo-img {
-        width: 180px;
+        width: 100px;
         max-height: 32px;
     }
     
