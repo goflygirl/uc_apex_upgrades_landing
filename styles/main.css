@@ -176,16 +176,19 @@ body {
 }
 
 .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
+    max-width: none;
+    width: 100%;
 }
 
 .hero-content {
-    max-width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-badge {
