@@ -910,6 +910,12 @@ body {
     line-height: 1.5;
 }
 
+/* Fix for Contact section step-content visibility */
+.contact-section .step-content p {
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
 .contact-guarantee {
     margin-top: 2rem;
     padding-top: 2rem;
