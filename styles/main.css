@@ -910,11 +910,6 @@ body {
     line-height: 1.5;
 }
 
-.understep{
-    color: var(--gray-300);
-    font-size: 0.9rem;
-}
-
 .contact-guarantee {
     margin-top: 2rem;
     padding-top: 2rem;
