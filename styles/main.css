@@ -910,7 +910,7 @@ body {
     line-height: 1.5;
 }
 
-.understep p{
+.understep{
     color: var(--gray-300);
     font-size: 0.9rem;
 }
