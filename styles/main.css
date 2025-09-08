@@ -735,18 +735,20 @@ body {
 }
 
 .complexity-bar {
-    height: 24px;
-    border-radius: 12px;
+    height: 32px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     position: relative;
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    padding: 0 0.75rem;
+    padding: 0 1rem;
     width: var(--percentage);
-    min-width: 80px;
+    min-width: 120px;
     transition: all 0.3s ease;
+    justify-content: flex-start;
+    overflow: visible;
 }
 
 .complexity-bar:hover {
