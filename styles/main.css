@@ -568,6 +568,51 @@ body {
     padding-top: 2rem;
 }
 
+.assessment-limitations {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-200);
+}
+
+.assessment-limitations h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 0.75rem;
+}
+
+.assessment-limitations ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.assessment-limitations li {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    line-height: 1.4;
+    padding: 0.25rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.assessment-limitations li::before {
+    content: '•';
+    color: var(--gray-400);
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.limitations {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 .value-prop {
     text-align: center;
     margin-bottom: 1.5rem;
