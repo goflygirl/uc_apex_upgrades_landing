@@ -661,17 +661,8 @@ body {
     border-bottom: 2px solid var(--light-blue);
 }
 
-.tool-icon {
-    font-size: 3rem;
-    background: var(--primary-blue);
-    color: var(--white);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+.tool-icon-img.original-colors {
+    filter: none;
 }
 
 .tool-info h3 {
@@ -745,7 +736,7 @@ body {
     font-weight: 600;
     padding: 0 1rem;
     width: var(--percentage);
-    min-width: 120px;
+    min-width: 140px;
     transition: all 0.3s ease;
     justify-content: flex-start;
     overflow: visible;
