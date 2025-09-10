@@ -666,6 +666,10 @@ body {
     height: 64px;
     border-radius: 12px;
     box-shadow: var(--shadow-md);
+    object-fit: contain;
+    object-position: center;
+    background: var(--white);
+    padding: 8px;
 }
 
 .tool-info h3 {
@@ -908,6 +912,10 @@ body {
     .tool-icon-img {
         width: 48px;
         height: 48px;
+        object-fit: contain;
+        object-position: center;
+        background: var(--white);
+        padding: 6px;
     }
     
     .tool-info h3 {
