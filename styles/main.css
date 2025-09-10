@@ -635,87 +635,86 @@ body {
     justify-content: center;
 }
 /* Tools Section */
-.tools-section {
-    background: var(--white);
-}
-
-.tools-content {
-    margin-top: 4rem;
-}
-
-.tool-showcase {
-    background: var(--white);
-    border-radius: 20px;
-    box-shadow: var(--shadow-lg);
-    padding: 3rem;
-    margin-bottom: 4rem;
-    border: 1px solid var(--gray-200);
-}
-
-.tool-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--light-blue);
-}
-
-.tool-icon-img.original-colors {
-    filter: none;
-}
-
-.tool-info h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 0.5rem;
-}
-
-.tool-info p {
-    font-size: 1.1rem;
-    color: var(--gray-600);
-}
-
-.tool-features-grid {
-    display: grid;
-    gap: 3rem;
-}
-
-.tool-feature {
+.tool-feature-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
+    margin: 3rem 0;
     align-items: center;
-    padding: 2rem;
-    background: var(--gray-50);
-    border-radius: 16px;
-    border-left: 4px solid var(--primary-blue);
 }
 
-.feature-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    background: var(--white);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: var(--shadow-md);
+.tool-feature-row:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+}
+
+.tool-feature-row:nth-child(even) .feature-visual {
+    order: 1;
+}
+
+.tool-feature-row:nth-child(even) .feature-content {
+    order: 2;
+}
+
+.tool-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
 }
 
 .feature-content h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--gray-900);
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
+    color: #1f2937;
 }
 
 .feature-content p {
-    color: var(--gray-600);
+    font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4b5563;
 }
 
+.feature-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-content li {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #374151;
+}
+
+.feature-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.feature-content strong {
+    color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .tool-feature-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .tool-feature-row:nth-child(even) .feature-visual {
+        order: 1;
+    }
+    
+    .tool-feature-row:nth-child(even) .feature-content {
+        order: 2;
+    }
+}
 /* Complexity Chart */
 .complexity-chart {
     width: 100%;

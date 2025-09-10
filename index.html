@@ -240,131 +240,109 @@
         </div>
     </section>
 <!-- Tools Section -->
-    <section class="section tools-section" id="tools">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Our Diagnostic Tools</div>
-                <h2 class="section-title">See What Your Assessment Reveals</h2>
-                <p class="section-subtitle">
-                    Our proprietary tools provide comprehensive insights into your APEX applications. 
-                    Here's exactly what you'll receive in your free assessment report.
-                </p>
-            </div>
-            
-            <div class="tools-content">
-                <div class="tool-showcase">
-                    <div class="tool-header">
-                        <img src="assets/icon_ape.png" alt="APEX Project Eye" class="tool-icon-img">
-                        <div class="tool-info">
-                            <h3>APEX Project Eye</h3>
-                            <p>Advanced application analysis and complexity scoring</p>
-                        </div>
-                    </div>
-                    
-                    <div class="tool-features-grid">
-                        <div class="tool-feature">
-                            <div class="feature-visual">
-                                <div class="complexity-chart">
-                                    <div class="complexity-bar basic" style="--percentage: 78%">
-                                        <span>Basic (140)</span>
-                                    </div>
-                                    <div class="complexity-bar simple" style="--percentage: 92%">
-                                        <span>Simple (261)</span>
-                                    </div>
-                                    <div class="complexity-bar moderate" style="--percentage: 67%">
-                                        <span>Moderate (87)</span>
-                                    </div>
-                                    <div class="complexity-bar advanced" style="--percentage: 36%">
-                                        <span>Advanced (30)</span>
-                                    </div>
-                                    <div class="complexity-bar monster" style="--percentage: 1%">
-                                        <span>Monster (5)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Page Complexity Analysis</h4>
-                                <p>Categorizes every page by complexity level, helping prioritize modernization efforts and estimate accurate project scope.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tool-feature">
-                            <div class="feature-visual">
-                                <div class="bubble-chart">
-                                    <div class="bubble medium" style="--size: 60px; --top: 20%; --left: 15%;">
-                                        <span>Page</span>
-                                    </div>
-                                    <div class="bubble large" style="--size: 70px; --top: 60%; --left: 35%;">
-                                        <span>Dashboard</span>
-                                    </div>
-                                    <div class="bubble small" style="--size: 35px; --top: 45%; --left: 70%;">
-                                        <span>Login</span>
-                                    </div>
-                                    <div class="bubble medium" style="--size: 45px; --top: 75%; --left: 80%;">
-                                        <span>Reports</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Application Structure Mapping</h4>
-                                <p>Visual representation of page relationships, usage patterns, and component dependencies across your entire application.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tool-feature">
-                            <div class="feature-visual">
-                                <div class="metrics-display">
-                                    <div class="metric-item">
-                                        <div class="metric-icon" style="background: #ef4444;">⚠️</div>
-                                        <span>CSS Code Lines: 510</span>
-                                    </div>
-                                    <div class="metric-item">
-                                        <div class="metric-icon" style="background: #f59e0b;">📝</div>
-                                        <span>JS Components: 14</span>
-                                    </div>
-                                    <div class="metric-item">
-                                        <div class="metric-icon" style="background: #10b981;">✓</div>
-                                        <span>DB References: 125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Technical Debt Scoring</h4>
-                                <p>Quantifies complexity factors including custom code, deprecated components, and maintenance risks with actionable metrics.</p>
-                            </div>
-                        </div>
+<section class="section tools-section" id="tools">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Our Diagnostic Tools</div>
+            <h2 class="section-title">See What Your Assessment Reveals</h2>
+            <p class="section-subtitle">
+                Our proprietary tools provide comprehensive insights into your APEX applications. 
+                Here's exactly what you'll receive in your free assessment report.
+            </p>
+        </div>
+        
+        <div class="tools-content">
+            <!-- APEX Project Eye Introduction -->
+            <div class="tool-showcase">
+                <div class="tool-header">
+                    <img src="assets/icon_ape.png" alt="APEX Project Eye" class="tool-icon-img">
+                    <div class="tool-info">
+                        <h3>APEX Project Eye</h3>
+                        <p>Advanced application analysis and complexity scoring</p>
                     </div>
                 </div>
                 
-                <div class="tools-benefits">
-                    <h3>What This Means for You</h3>
-                    <div class="benefits-grid">
-                        <div class="benefit-item">
-                            <div class="benefit-icon">📊</div>
-                            <div>
-                                <strong>Clear Priorities</strong>
-                                <p>Know exactly which pages need attention first based on complexity and usage data</p>
-                            </div>
+                <!-- APE Dashboard -->
+                <div class="tool-feature-row">
+                    <div class="feature-content">
+                        <h4>Comprehensive Usage Analytics</h4>
+                        <p>Get detailed insights into your application's performance, usage patterns, and potential bottlenecks. Our dashboard reveals:</p>
+                        <ul>
+                            <li><strong>Performance tracking</strong> - Load times, page views, and user sessions</li>
+                            <li><strong>Usage patterns</strong> - Which pages are actively used vs. abandoned</li>
+                            <li><strong>Error monitoring</strong> - Identify problematic areas requiring attention</li>
+                            <li><strong>User behavior</strong> - Understand how your applications are actually used</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <img src="assets/ape-dashboard.png" alt="APEX Project Eye Dashboard showing usage analytics and performance metrics" class="tool-screenshot">
+                    </div>
+                </div>
+                
+                <!-- APE Page Complexity Overview -->
+                <div class="tool-feature-row">
+                    <div class="feature-visual">
+                        <img src="assets/ape-complexity-overview.png" alt="APEX Project Eye page complexity overview with bubble chart visualization" class="tool-screenshot">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Page Complexity Visualization</h4>
+                        <p>Instantly understand your application's structure with our interactive complexity mapping:</p>
+                        <ul>
+                            <li><strong>Complexity categorization</strong> - From Basic to Monster pages (140 Basic, 261 Simple, 87 Moderate, 30 Advanced, 5 Monster)</li>
+                            <li><strong>Visual mapping</strong> - Bubble chart showing size vs. complexity relationships</li>
+                            <li><strong>Priority identification</strong> - Quickly spot which pages need immediate attention</li>
+                            <li><strong>Resource allocation</strong> - Plan your modernization efforts based on actual data</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- APE Detailed Scoring -->
+                <div class="tool-feature-row">
+                    <div class="feature-content">
+                        <h4>Granular Technical Analysis</h4>
+                        <p>Dive deep into each page with detailed scoring that reveals exactly what drives complexity:</p>
+                        <ul>
+                            <li><strong>Code complexity metrics</strong> - CSS lines (510), JavaScript components (14), PL/SQL references (125)</li>
+                            <li><strong>Component analysis</strong> - Authorization schemes, region types, database objects</li>
+                            <li><strong>Security assessment</strong> - Identify potential vulnerabilities and compliance issues</li>
+                            <li><strong>Modernization roadmap</strong> - Clear priorities for upgrading legacy components</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <img src="assets/ape-detailed-scoring.png" alt="APEX Project Eye detailed scoring breakdown showing technical debt metrics" class="tool-screenshot">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tools-benefits">
+                <h3>What This Means for You</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📊</div>
+                        <div>
+                            <strong>Clear Priorities</strong>
+                            <p>Know exactly which pages need attention first based on complexity and usage data</p>
                         </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon">💰</div>
-                            <div>
-                                <strong>Accurate Estimates</strong>
-                                <p>Receive precise project quotes based on measured complexity, not guesswork</p>
-                            </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <div>
+                            <strong>Accurate Estimates</strong>
+                            <p>Receive precise project quotes based on measured complexity, not guesswork</p>
                         </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon">🎯</div>
-                            <div>
-                                <strong>Focused Scope</strong>
-                                <p>Choose specific areas to modernize rather than committing to entire applications</p>
-                            </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div>
+                            <strong>Focused Scope</strong>
+                            <p>Choose specific areas to modernize rather than committing to entire applications</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <!-- Methodology Section -->
     <section class="section approach-section" id="approach">
         <div class="container">
