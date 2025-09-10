@@ -635,16 +635,57 @@ body {
     justify-content: center;
 }
 /* Tools Section */
+.tools-section {
+    background: var(--gray-50);
+}
+
+.tools-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tool-showcase {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 3rem;
+}
+
+.tool-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--gray-100);
+}
+
+.tool-icon-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.tool-info h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.25rem;
+}
+
+.tool-info p {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+}
+
 .tool-feature-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin: 3rem 0;
+    gap: 4rem;
+    margin: 4rem 0;
     align-items: center;
-}
-
-.tool-feature-row:nth-child(even) {
-    grid-template-columns: 1fr 1fr;
 }
 
 .tool-feature-row:nth-child(even) .feature-visual {
@@ -655,56 +696,163 @@ body {
     order: 2;
 }
 
+.feature-visual {
+    position: relative;
+}
+
 .tool-screenshot {
     width: 100%;
+    max-width: 500px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s ease;
+}
+
+.tool-screenshot:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .feature-content h4 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: var(--gray-900);
+    line-height: 1.3;
 }
 
 .feature-content p {
     font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--gray-600);
 }
 
 .feature-content ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .feature-content li {
-    margin: 0.75rem 0;
-    padding-left: 1.5rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
     position: relative;
-    color: #374151;
+    color: var(--gray-700);
+    line-height: 1.6;
 }
 
 .feature-content li:before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #10b981;
+    top: 0.1rem;
+    color: var(--success);
     font-weight: bold;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
 }
 
 .feature-content strong {
-    color: #1f2937;
+    color: var(--gray-900);
+    font-weight: 600;
+}
+
+/* Tools Benefits Enhancement */
+.tools-benefits {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: var(--white);
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tools-benefits h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.benefit-item strong {
+    display: block;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.benefit-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Tools */
+@media (max-width: 1024px) {
+    .tool-feature-row {
+        gap: 3rem;
+    }
+    
+    .tool-showcase {
+        padding: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
     .tool-feature-row {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
+        margin: 3rem 0;
     }
     
     .tool-feature-row:nth-child(even) .feature-visual {
@@ -713,6 +861,64 @@ body {
     
     .tool-feature-row:nth-child(even) .feature-content {
         order: 2;
+    }
+    
+    .tool-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .tool-showcase {
+        padding: 2rem;
+    }
+    
+    .tools-benefits {
+        padding: 3rem 2rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tool-screenshot {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-showcase {
+        padding: 1.5rem;
+    }
+    
+    .tool-header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .tool-icon-img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .tool-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-content h4 {
+        font-size: 1.25rem;
+    }
+    
+    .feature-content p {
+        font-size: 1rem;
+    }
+    
+    .tools-benefits {
+        padding: 2rem 1.5rem;
+    }
+    
+    .tools-benefits h3 {
+        font-size: 1.75rem;
     }
 }
 /* Complexity Chart */
@@ -859,128 +1065,9 @@ body {
     color: var(--gray-700);
 }
 
-/* Tools Benefits */
-.tools-benefits {
-    background: var(--light-blue);
-    padding: 3rem;
-    border-radius: 20px;
-    text-align: center;
-}
 
-.tools-benefits h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 2.5rem;
-}
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
 
-.benefit-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    text-align: left;
-    padding: 1.5rem;
-    background: var(--white);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-}
-
-.benefit-item:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
-.benefit-icon {
-    font-size: 1.5rem;
-    background: var(--primary-blue);
-    color: var(--white);
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.benefit-item strong {
-    display: block;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: 0.5rem;
-}
-
-.benefit-item p {
-    color: var(--gray-600);
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-/* Responsive Design for Tools */
-@media (max-width: 768px) {
-    .tool-feature {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .tool-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .tool-showcase {
-        padding: 2rem;
-    }
-    
-    .tools-benefits {
-        padding: 2rem;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .complexity-chart {
-        max-width: 250px;
-    }
-    
-    .bubble-chart {
-        height: 150px;
-    }
-    
-    .bubble {
-        font-size: 0.6rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .tool-features-grid {
-        gap: 2rem;
-    }
-    
-    .feature-visual {
-        min-height: 150px;
-        padding: 1rem;
-    }
-    
-    .complexity-bar {
-        height: 20px;
-        font-size: 0.7rem;
-    }
-    
-    .bubble {
-        --size: calc(var(--size) * 0.8) !important;
-    }
-}
 
 /* Animation for complexity bars on load */
 @keyframes expandBar {
