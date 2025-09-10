@@ -855,11 +855,18 @@ body {
         margin: 3rem 0;
     }
     
-    .tool-feature-row:nth-child(even) .feature-visual {
+    /* Reset all order properties on mobile for consistent stacking */
+    .tool-feature-row .feature-visual,
+    .tool-feature-row .feature-content {
+        order: unset;
+    }
+    
+    /* Ensure content always comes before visual on mobile */
+    .tool-feature-row .feature-content {
         order: 1;
     }
     
-    .tool-feature-row:nth-child(even) .feature-content {
+    .tool-feature-row .feature-visual {
         order: 2;
     }
     
@@ -883,6 +890,8 @@ body {
     
     .tool-screenshot {
         max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 
